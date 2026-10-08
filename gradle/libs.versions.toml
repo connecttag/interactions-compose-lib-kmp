@@ -1,0 +1,48 @@
+[versions]
+agp = "9.4.1"
+kotlin = "2.4.20"
+compose = "1.12.0"
+composeMaterial3 = "1.9.0"
+coroutines = "1.11.0"
+serialization = "1.11.0"
+mokoPermissions = "0.20.1"
+playServicesLocation = "21.3.0"
+androidxCore = "1.18.0"
+androidxActivityCompose = "1.13.0"
+androidxLifecycleRuntimeCompose = "2.10.0"
+
+[libraries]
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+
+compose-runtime = { module = "org.jetbrains.compose.runtime:runtime", version.ref = "compose" }
+compose-foundation = { module = "org.jetbrains.compose.foundation:foundation", version.ref = "compose" }
+compose-material3 = { module = "org.jetbrains.compose.material3:material3", version.ref = "composeMaterial3" }
+compose-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "compose" }
+
+moko-permissions = { module = "dev.icerock.moko:permissions", version.ref = "mokoPermissions" }
+moko-permissions-compose = { module = "dev.icerock.moko:permissions-compose", version.ref = "mokoPermissions" }
+moko-permissions-camera = { module = "dev.icerock.moko:permissions-camera", version.ref = "mokoPermissions" }
+moko-permissions-location = { module = "dev.icerock.moko:permissions-location", version.ref = "mokoPermissions" }
+moko-permissions-microphone = { module = "dev.icerock.moko:permissions-microphone", version.ref = "mokoPermissions" }
+moko-permissions-notifications = { module = "dev.icerock.moko:permissions-notifications", version.ref = "mokoPermissions" }
+moko-permissions-test = { module = "dev.icerock.moko:permissions-test", version.ref = "mokoPermissions" }
+
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
+androidx-compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivityCompose" }
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidxLifecycleRuntimeCompose" }
+play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
+
+connecttag-permissions = { module = "com.github.connecttag:permissions-lib-kmp", version = "1.0.0" }
+connecttag-filestorage = { module = "com.github.connecttag:file-storage-lib-kmp", version = "1.0.0" }
+connecttag-location = { module = "com.github.connecttag:location-lib-kmp", version = "1.0.0" }
+connecttag-logging = { module = "com.github.connecttag:logging-lib-kmp", version = "1.0.0" }
+
+[plugins]
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+android-kmp-library = { id = "com.android.kotlin.multiplatform.library", version.ref = "agp" }
+compose-multiplatform = { id = "org.jetbrains.compose", version.ref = "compose" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

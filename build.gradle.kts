@@ -66,9 +66,6 @@ kotlin {
         iosMain.get().dependsOn(mobileMain)
 
         commonMain.dependencies {
-            api(libs.connecttag.filestorage)
-            api(libs.connecttag.location)
-            api(libs.connecttag.permissions)
             implementation(libs.kotlinx.coroutines.core)
             implementation(libs.kotlinx.serialization.json)
             implementation(compose.runtime)

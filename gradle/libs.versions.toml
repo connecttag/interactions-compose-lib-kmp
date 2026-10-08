@@ -35,9 +35,6 @@ androidx-compose-activity = { group = "androidx.activity", name = "activity-comp
 androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidxLifecycleRuntimeCompose" }
 play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
 
-connecttag-permissions = { module = "com.github.connecttag:permissions-lib-kmp", version = "1.0.0" }
-connecttag-filestorage = { module = "com.github.connecttag:file-storage-lib-kmp", version = "1.0.0" }
-connecttag-location = { module = "com.github.connecttag:location-lib-kmp", version = "1.0.0" }
 
 [plugins]
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }

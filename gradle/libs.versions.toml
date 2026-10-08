@@ -38,7 +38,6 @@ play-services-location = { group = "com.google.android.gms", name = "play-servic
 connecttag-permissions = { module = "com.github.connecttag:permissions-lib-kmp", version = "1.0.0" }
 connecttag-filestorage = { module = "com.github.connecttag:file-storage-lib-kmp", version = "1.0.0" }
 connecttag-location = { module = "com.github.connecttag:location-lib-kmp", version = "1.0.0" }
-connecttag-logging = { module = "com.github.connecttag:logging-lib-kmp", version = "1.0.0" }
 
 [plugins]
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }

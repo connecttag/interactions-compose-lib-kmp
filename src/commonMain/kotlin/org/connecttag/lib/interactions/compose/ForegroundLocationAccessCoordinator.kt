@@ -11,7 +11,6 @@ import org.connecttag.lib.location.manager.ForegroundLocationPurpose
 import org.connecttag.lib.location.manager.LocationAccuracyRequirement
 import org.connecttag.lib.location.manager.LocationReadiness
 import org.connecttag.lib.location.model.LocationError
-import org.connecttag.lib.logging.AppLog
 import org.connecttag.lib.permissions.PermissionRequestResult
 import org.connecttag.lib.permissions.PlatformPermissionStatus
 import org.connecttag.lib.permissions.PlatformPermissionUnavailableReason
@@ -454,8 +453,5 @@ internal class ForegroundLocationAccessState(
 }
 
 private fun logLocationAccessEvent(event: ForegroundLocationDiagnosticEvent) {
-    AppLog.d(
-        "LocationAccess",
-        "purpose=${event.purpose.name} stage=${event.stage.name} unavailableReason=${event.unavailableReason?.name ?: "none"}",
-    )
+    println("LocationAccess: purpose=${event.purpose.name} stage=${event.stage.name} unavailableReason=${event.unavailableReason?.name ?: "none"}")
 }

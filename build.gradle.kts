@@ -69,7 +69,6 @@ kotlin {
             api(libs.connecttag.filestorage)
             api(libs.connecttag.location)
             api(libs.connecttag.permissions)
-            implementation(libs.connecttag.logging)
             implementation(libs.kotlinx.coroutines.core)
             implementation(libs.kotlinx.serialization.json)
             implementation(compose.runtime)
